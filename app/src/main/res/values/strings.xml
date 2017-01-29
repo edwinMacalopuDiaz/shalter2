@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Schalter for KWGT</string>
+    <!-- Name of the skin to be shown inside the app, by default its the same as the app name -->
+    <string name="kustom_pack_title">@string/app_name</string>
+    <!-- A brief description of the pack contents -->
+    <string name="kustom_pack_description">widgets for kwgt and switch</string>
+</resources>
