@@ -1,0 +1,29 @@
+apply plugin: 'com.android.application'
+
+dependencies {
+    compile 'org.bitbucket.frankmonza:kustomapi:+'
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.edwinmd.schalter"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 6
+        versionName "1.5"
+    }
+
+    buildTypes {
+        release {
+            shrinkResources false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules'
+        }
+        aaptOptions {
+            noCompress 'zip', 'komp', 'klwp', 'kwgt', 'klck', 'kwch'
+        }
+    }
+}
